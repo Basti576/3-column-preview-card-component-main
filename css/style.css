@@ -33,13 +33,13 @@ body{
   }
 .cards-container{
     display:flex;
-    
+    height: auto;
     max-width:70vw;
  
 }
 
 .card{
-    padding:3rem;
+    padding:3rem 3rem 2rem 3rem;
     height:auto;
     
 }
@@ -50,7 +50,7 @@ body{
     font-family: 'Big Shoulders Text', cursive;
     font-weight: 700;
     color: hsl(0, 0%, 95%);
-    font-size:3vw;
+    font-size:30px;
     margin:1.5rem 0 1.5rem 0;
 }
 
@@ -59,7 +59,10 @@ body{
     font-weight: 400;
     line-height:1.5rem;
     color: hsla(0, 0%, 100%, 0.75);
-    margin-bottom:6rem;
+    height:15rem;
+
+    
+   
 }
 
 
@@ -67,7 +70,7 @@ body{
 #card-sedan{
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
- background-color:hsl(31, 77%, 52%);
+    background-color:hsl(31, 77%, 52%);
  
 
 }
@@ -100,10 +103,7 @@ body{
     border:2px solid white;
     color:hsl(179, 100%, 13%);
 }
-.card-footer{
-    height:auto;
-    width: auto;
-}
+
 
 #card-sedan .card-button:hover, #card-suvs .card-button:hover, #card-luxury .card-button:hover{
     transition:all 100ms ease-in-out;
@@ -113,7 +113,11 @@ body{
     
     
 }
-
+.card-footer{
+    height:auto;
+    width: auto;
+    padding:1rem 0;
+}
 .card-button{
    
     font-family: 'Lexend Deca', sans-serif;
