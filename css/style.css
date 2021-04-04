@@ -1,0 +1,172 @@
+/*CSS RESET*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+  
+    background: hsl(0, 0%, 95%);
+    overflow: hidden;
+    font-size: 15px;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+  .main-container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+.cards-container{
+    display:flex;
+    
+    max-width:70vw;
+ 
+}
+
+.card{
+    padding:3rem;
+    height:auto;
+    
+}
+
+
+
+.card-title{
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-size:3vw;
+    margin:1.5rem 0 1.5rem 0;
+}
+
+.card-content{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height:1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom:6rem;
+}
+
+
+
+#card-sedan{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+ background-color:hsl(31, 77%, 52%);
+ 
+
+}
+
+#card-suvs{
+    background-color:hsl(184, 100%, 22%);
+}
+
+#card-luxury{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color:hsl(179, 100%, 13%);
+
+}
+
+
+#card-sedan .card-button{
+    border:2px solid white;
+    color:hsl(31, 77%, 52%);
+}
+
+
+
+#card-suvs .card-button{
+    border:2px solid white;
+    color:hsl(184, 100%, 22%);
+}
+
+#card-luxury .card-button{
+    border:2px solid white;
+    color:hsl(179, 100%, 13%);
+}
+.card-footer{
+    height:auto;
+    width: auto;
+}
+
+#card-sedan .card-button:hover, #card-suvs .card-button:hover, #card-luxury .card-button:hover{
+    transition:all 100ms ease-in-out;
+    background: rgba(255, 255, 255, 0);
+    color:white;
+    cursor: pointer;
+    
+    
+}
+
+.card-button{
+   
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    padding:0.75rem 2rem;
+    border-radius:2rem;
+   
+}
+
+
+footer{
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width:800px) {
+    body{
+        overflow-y: scroll;
+    }
+
+    .main-container{
+        height:auto;
+    }
+
+    .cards-container{
+        margin:1.5rem 0;
+    }
+    .cards-container{
+        flex-direction:column;
+    }
+
+    #card-sedan{
+        border-radius: 0;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        background-color:hsl(31, 77%, 52%);
+     
+    
+    }
+
+    #card-luxury{
+        border-radius: 0;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        background-color:hsl(179, 100%, 13%);
+    
+    }
+    
+    footer{
+        position:relative;
+    }
+    
+}
